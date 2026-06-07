@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Academy | ยกระดับความสวยในแบบคุณ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Prompt', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.4); }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-rose-50 via-pink-50 to-orange-50 text-slate-800">
+
+    <nav class="sticky top-0 bg-white/70 backdrop-blur-lg shadow-sm z-50 border-b border-rose-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-rose-600 tracking-tight">Makeup Academy</h1>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="#steps" class="hover:text-rose-600 transition">บทเรียน</a>
+                <a href="#colors" class="hover:text-rose-600 transition">เฉดสี</a>
+                <a href="#kit" class="hover:text-rose-600 transition">อุปกรณ์</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <div class="rounded-[2rem] overflow-hidden shadow-2xl mb-12 border-4 border-white">
+                <img src="Gemini_Generated_Image_1sawse1sawse1saw.png" alt="Makeup Academy Hero" class="w-full h-auto object-cover">
+            </div>
+            <h2 class="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">เผยผิวสวยในแบบคุณ<br>ด้วยเทคนิคที่มือโปรเลือกใช้</h2>
+            <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">ยกระดับทักษะการแต่งหน้าของคุณด้วยคำแนะนำที่ชัดเจน เข้าใจง่าย และได้ผลลัพธ์ที่สมบูรณ์แบบในทุกโอกาส</p>
+        </div>
+    </header>
+
+    <section id="colors" class="max-w-5xl mx-auto px-6 py-16">
+        <h3 class="text-4xl font-bold text-center mb-12">ค้นหาเฉดสีที่ใช่สำหรับผิวคุณ</h3>
+        <div class="grid md:grid-cols-3 gap-6 mb-10">
+            <button onclick="updateColor('warm')" class="p-6 bg-orange-100 hover:bg-orange-200 rounded-3xl transition text-lg font-semibold border-2 border-orange-200">โทนอุ่น (Warm)</button>
+            <button onclick="updateColor('cool')" class="p-6 bg-blue-100 hover:bg-blue-200 rounded-3xl transition text-lg font-semibold border-2 border-blue-200">โทนเย็น (Cool)</button>
+            <button onclick="updateColor('neutral')" class="p-6 bg-slate-100 hover:bg-slate-200 rounded-3xl transition text-lg font-semibold border-2 border-slate-200">โทนกลาง (Neutral)</button>
+        </div>
+        <div id="color-box" class="glass-card p-10 rounded-[2rem] text-center shadow-lg min-h-[220px] flex flex-col justify-center items-center">
+            <h4 id="color-title" class="text-3xl font-bold mb-4 text-rose-600">เลือกโทนสีผิวของคุณ</h4>
+            <p id="color-desc" class="text-slate-700 text-lg max-w-2xl">คลิกปุ่มด้านบนเพื่อรับคำแนะนำเฉดสีที่ช่วยขับผิวของคุณให้ดูเปล่งประกายและมีมิติที่สุด</p>
+        </div>
+    </section>
+
+    <section id="steps" class="max-w-5xl mx-auto px-6 py-16">
+        <h3 class="text-4xl font-bold text-center mb-16">ขั้นตอนการแต่งหน้าแบบมืออาชีพ</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-10 rounded-[2rem] hover:shadow-xl transition-all">
+                <div class="text-5xl mb-6">🧴</div>
+                <h4 class="text-2xl font-bold mb-4">Step 01: เตรียมผิวให้พร้อม</h4>
+                <p class="text-slate-600">บำรุงผิวด้วยมอยส์เจอไรเซอร์และทากันแดดเป็นขั้นตอนที่สำคัญที่สุด เพื่อผลลัพธ์ผิวที่เรียบเนียนและเครื่องสำอางติดทนนาน</p>
+            </div>
+            <div class="glass-card p-10 rounded-[2rem] hover:shadow-xl transition-all">
+                <div class="text-5xl mb-6">🎨</div>
+                <h4 class="text-2xl font-bold mb-4">Step 02: งานผิวที่สมบูรณ์</h4>
+                <p class="text-slate-600">เลือกใช้รองพื้นให้ตรงกับเฉดสีผิว ปกปิดจุดบกพร่องด้วยคอนซีลเลอร์ และปิดท้ายด้วยแป้งฝุ่นเพื่อล็อคผิวให้เป๊ะตลอดวัน</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center border-t border-rose-100 mt-10">
+        <p class="text-slate-500 font-light">&copy; 2026 Makeup Academy. ยกระดับความมั่นใจให้คุณทุกวัน</p>
+    </footer>
+
+    <script>
+        const colorData = {
+            warm: { title: "โทนอุ่น (Warm Tone)", desc: "สีผิวที่มีอันเดอร์โทนเหลือง เหมาะกับเมคอัพโทนสีส้มอิฐ พีช และสีทอง ช่วยให้ผิวดูอบอุ่นและมีสุขภาพดี" },
+            cool: { title: "โทนเย็น (Cool Tone)", desc: "สีผิวที่มีอันเดอร์โทนชมพู เหมาะกับเมคอัพโทนชมพู เบอร์รี่ หรือม่วงอ่อน ช่วยให้ผิวดูขาวกระจ่างใสและสดใส" },
+            neutral: { title: "โทนกลาง (Neutral Tone)", desc: "ผิวที่มีความสมดุลระหว่างชมพูและเหลือง คุณสามารถสนุกกับการแต่งหน้าได้ทุกเฉดสีตามสไตล์ที่ชอบ" }
+        };
+
+        function updateColor(tone) {
+            const titleEl = document.getElementById('color-title');
+            const descEl = document.getElementById('color-desc');
+            titleEl.innerText = colorData[tone].title;
+            descEl.innerText = colorData[tone].desc;
+        }
+    </script>
+</body>
+</html>
